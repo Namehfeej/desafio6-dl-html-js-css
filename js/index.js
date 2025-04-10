@@ -362,7 +362,7 @@
     } else {
         setTimeout(function() {
             alert('Los nombres no están duplicados');
-            console.log("No hubo coincidencias de nombres")
+            console.log("No hubo coincidencias de nombres");
             confirmAction();
         }, 1000); // Ejecuta la función después de 3 segundos (3000 milisegundos)
         
@@ -721,7 +721,9 @@ function confirmAction(messageConfirmText){
             console.log("No hubo coincidencias de apellidos")
         }
          } else {
-            console.log('No se evaluaron los apellidos.');
-        }
+            console.log("No hubo coincidencias de apellidos")
+         }
+} else {
+    console.log('No se evaluaron los apellidos.');
 }
 }
