@@ -6,7 +6,24 @@
 
 
     //Item 2.
-    
+    /*
+    const namdsDl = document.querySelectorAll('dl');
+    console.log(namdsDl);
+    const namdsDlToArray = [...namdsDl];
+    console.log(namdsDlToArray);
+
+    for (let i = 0; i < namdsDlToArray.length; i++) {
+        let namesUsersDl = namdsDlToArray[i];
+        console.log(namesUsersDl);
+        let namesUsersDlInfo = namesUsersDl.lastElementChild.innerHTML;
+        console.log(namesUsersDlInfo);
+        for (let j = 0; j < namesUsersDl.length; j++) {
+            const element = namesUsersDl[j];
+            console.log(element);
+        }
+    }
+    */
+   
     const namesDd = document.querySelectorAll('dd');
     //console.log(namesDd); 
 
@@ -20,14 +37,12 @@
     const lastName1User2 = namesDd[6].outerText.toUpperCase();
     const lastName2User2 = namesDd[7].outerText.toUpperCase();
 
-    /*
+    
     for (let i = 0; i < namesDd.length; i++) {
         let namesUsers = namesDd[i].outerText;
         console.log(namesUsers);
-        let keyNames = namesUsers.length;
-        concat(namesUsers)
     }
-    */
+   
      
     function fullNameValuesToConsole(FullNameValueToConsole) {
         FullNameValueToConsole = "-----\nIntegrante 1: " + name1User1 + " " + name2User1 + " " + lastName1User1 + " " + lastName2User1 + "\n" + "Integrante 2: " + name1User2 + " " + name2User2 + " " + lastName1User2 + " " + lastName2User2 + "\n" + "-----";
