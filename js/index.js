@@ -48,7 +48,6 @@
         FullNameValueToConsole = "-----\nIntegrante 1: " + name1User1 + name2User1 + " " + lastName1User1 + " " + lastName2User1 + "\n" + "Integrante 2: " + name1User2 + name2User2 + " " + lastName1User2 + " " + lastName2User2 + "\n" + "-----";
         console.log(FullNameValueToConsole);
     }
-
     
     let FullNameValueToConsole = "";
 
@@ -182,7 +181,7 @@
     
             confirmAction();
     } 
-    } else if(name2User1 === name2User2) {
+    } else if(name2User1 === name2User2 && name2User1.length != 0 && name2User2.length != 0) {
         //Prompt for color name.
         const promptNameColor = prompt("Los nombres tienen coincidencias. Elige un color para diferenciar los nombres: rojo o azul.");
     
