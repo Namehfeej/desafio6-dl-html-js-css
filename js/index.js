@@ -63,171 +63,176 @@
         fullNameValuesToConsole();
     }
    
-
-if(name1User1 === name1User2) {
+    setTimeout(function() {
+        if(name1User1 === name1User2) {
+            //Prompt for color name.
+            
+            const promptNameColor = prompt("Los nombres tienen coincidencias. Elige un color para diferenciar los nombres: rojo o azul.");
+    
+            let promptNameText = promptNameColor;
+            
+    
+            if(promptNameText === 'rojo') {
+    
+                const name1User1Value = document.getElementById('name1-user1');
+                const name1User1AtributteColor = document.createAttribute("class");
+    
+                name1User1AtributteColor.value = "name-color-red";
+                name1User1Value.setAttributeNode(name1User1AtributteColor);
+    
+                const name1User2Value = document.getElementById('name1-user2');
+                const name1User2AtributteColor = document.createAttribute("class");
+    
+                name1User2AtributteColor.value = "name-color-blue";
+                name1User2Value.setAttributeNode(name1User2AtributteColor);
+    
+                confirmAction();
+                
+            } else if (promptNameText === 'azul') {
+    
+                const name1User1Value = document.getElementById('name1-user1');
+                const name1User1AtributteColor = document.createAttribute("class");
+    
+                name1User1AtributteColor.value = "name-color-blue";
+                name1User1Value.setAttributeNode(name1User1AtributteColor);
+    
+                const name1User2Value = document.getElementById('name1-user2');
+                const name1User2AtributteColor = document.createAttribute("class");
+    
+                name1User2AtributteColor.value = "name-color-red";
+                name1User2Value.setAttributeNode(name1User2AtributteColor);
+    
+                confirmAction();
+        } 
+    } else if(name2User1 === name1User2) {
         //Prompt for color name.
         const promptNameColor = prompt("Los nombres tienen coincidencias. Elige un color para diferenciar los nombres: rojo o azul.");
-
+    
         let promptNameText = promptNameColor;
         
-
+    
         if(promptNameText === 'rojo') {
-
-            const name1User1Value = document.getElementById('name1-user1');
-            const name1User1AtributteColor = document.createAttribute("class");
-
-            name1User1AtributteColor.value = "name-color-red";
-            name1User1Value.setAttributeNode(name1User1AtributteColor);
-
+    
+            const name2User1Value = document.getElementById('name2-user1');
+            const name2User1AtributteColor = document.createAttribute("class");
+    
+            name2User1AtributteColor.value = "name-color-red";
+            name2User1Value.setAttributeNode(name2User1AtributteColor);
+    
             const name1User2Value = document.getElementById('name1-user2');
             const name1User2AtributteColor = document.createAttribute("class");
-
+    
             name1User2AtributteColor.value = "name-color-blue";
             name1User2Value.setAttributeNode(name1User2AtributteColor);
-
+    
             confirmAction();
             
         } else if (promptNameText === 'azul') {
-
-            const name1User1Value = document.getElementById('name1-user1');
-            const name1User1AtributteColor = document.createAttribute("class");
-
-            name1User1AtributteColor.value = "name-color-blue";
-            name1User1Value.setAttributeNode(name1User1AtributteColor);
-
+    
+            const name2User1Value = document.getElementById('name2-user1');
+            const name2User1AtributteColor = document.createAttribute("class");
+    
+            name2User1AtributteColor.value = "name-color-blue";
+            name2User1Value.setAttributeNode(name2User1AtributteColor);
+    
             const name1User2Value = document.getElementById('name1-user2');
             const name1User2AtributteColor = document.createAttribute("class");
-
+    
             name1User2AtributteColor.value = "name-color-red";
             name1User2Value.setAttributeNode(name1User2AtributteColor);
-
+    
             confirmAction();
     } 
-} else if(name2User1 === name1User2) {
-    //Prompt for color name.
-    const promptNameColor = prompt("Los nombres tienen coincidencias. Elige un color para diferenciar los nombres: rojo o azul.");
-
-    let promptNameText = promptNameColor;
+    } else if(name1User1 === name2User2) {
+        //Prompt for color name.
+        const promptNameColor = prompt("Los nombres tienen coincidencias. Elige un color para diferenciar los nombres: rojo o azul.");
     
-
-    if(promptNameText === 'rojo') {
-
-        const name2User1Value = document.getElementById('name2-user1');
-        const name2User1AtributteColor = document.createAttribute("class");
-
-        name2User1AtributteColor.value = "name-color-red";
-        name2User1Value.setAttributeNode(name2User1AtributteColor);
-
-        const name1User2Value = document.getElementById('name1-user2');
-        const name1User2AtributteColor = document.createAttribute("class");
-
-        name1User2AtributteColor.value = "name-color-blue";
-        name1User2Value.setAttributeNode(name1User2AtributteColor);
-
-        confirmAction();
+        let promptNameText = promptNameColor;
         
-    } else if (promptNameText === 'azul') {
-
-        const name2User1Value = document.getElementById('name2-user1');
-        const name2User1AtributteColor = document.createAttribute("class");
-
-        name2User1AtributteColor.value = "name-color-blue";
-        name2User1Value.setAttributeNode(name2User1AtributteColor);
-
-        const name1User2Value = document.getElementById('name1-user2');
-        const name1User2AtributteColor = document.createAttribute("class");
-
-        name1User2AtributteColor.value = "name-color-red";
-        name1User2Value.setAttributeNode(name1User2AtributteColor);
-
-        confirmAction();
-} 
-} else if(name1User1 === name2User2) {
-    //Prompt for color name.
-    const promptNameColor = prompt("Los nombres tienen coincidencias. Elige un color para diferenciar los nombres: rojo o azul.");
-
-    let promptNameText = promptNameColor;
     
-
-    if(promptNameText === 'rojo') {
-
-        const name1User1Value = document.getElementById('name1-user1');
-        const name1User1AtributteColor = document.createAttribute("class");
-
-        name1User1AtributteColor.value = "name-color-red";
-        name1User1Value.setAttributeNode(name1User1AtributteColor);
-
-        const name2User2Value = document.getElementById('name2-user2');
-        const name2User2AtributteColor = document.createAttribute("class");
-
-        name2User2AtributteColor.value = "name-color-blue";
-        name2User2Value.setAttributeNode(name2User2AtributteColor);
-
-        confirmAction();
+        if(promptNameText === 'rojo') {
+    
+            const name1User1Value = document.getElementById('name1-user1');
+            const name1User1AtributteColor = document.createAttribute("class");
+    
+            name1User1AtributteColor.value = "name-color-red";
+            name1User1Value.setAttributeNode(name1User1AtributteColor);
+    
+            const name2User2Value = document.getElementById('name2-user2');
+            const name2User2AtributteColor = document.createAttribute("class");
+    
+            name2User2AtributteColor.value = "name-color-blue";
+            name2User2Value.setAttributeNode(name2User2AtributteColor);
+    
+            confirmAction();
+            
+        } else if (promptNameText === 'azul') {
+    
+            const name1User1Value = document.getElementById('name1-user1');
+            const name1User1AtributteColor = document.createAttribute("class");
+    
+            name1User1AtributteColor.value = "name-color-blue";
+            name1User1Value.setAttributeNode(name1User1AtributteColor);
+    
+            const name2User2Value = document.getElementById('name2-user2');
+            const name2User2AtributteColor = document.createAttribute("class");
+    
+            name2User2AtributteColor.value = "name-color-red";
+            name2User2Value.setAttributeNode(name2User2AtributteColor);
+    
+            confirmAction();
+    } 
+    } else if(name2User1 === name2User2) {
+        //Prompt for color name.
+        const promptNameColor = prompt("Los nombres tienen coincidencias. Elige un color para diferenciar los nombres: rojo o azul.");
+    
+        let promptNameText = promptNameColor;
         
-    } else if (promptNameText === 'azul') {
-
-        const name1User1Value = document.getElementById('name1-user1');
-        const name1User1AtributteColor = document.createAttribute("class");
-
-        name1User1AtributteColor.value = "name-color-blue";
-        name1User1Value.setAttributeNode(name1User1AtributteColor);
-
-        const name2User2Value = document.getElementById('name2-user2');
-        const name2User2AtributteColor = document.createAttribute("class");
-
-        name2User2AtributteColor.value = "name-color-red";
-        name2User2Value.setAttributeNode(name2User2AtributteColor);
-
-        confirmAction();
-} 
-} else if(name2User1 === name2User2) {
-    //Prompt for color name.
-    const promptNameColor = prompt("Los nombres tienen coincidencias. Elige un color para diferenciar los nombres: rojo o azul.");
-
-    let promptNameText = promptNameColor;
     
-
-    if(promptNameText === 'rojo') {
-
-        const name2User1Value = document.getElementById('name2-user1');
-        const name2User1AtributteColor = document.createAttribute("class");
-
-        name2User1AtributteColor.value = "name-color-red";
-        name2User1Value.setAttributeNode(name2User1AtributteColor);
-
-        const name2User2Value = document.getElementById('name2-user2');
-        const name2User2AtributteColor = document.createAttribute("class");
-
-        name2User2AtributteColor.value = "name-color-blue";
-        name2User2Value.setAttributeNode(name2User2AtributteColor);
-
-        confirmAction();
+        if(promptNameText === 'rojo') {
+    
+            const name2User1Value = document.getElementById('name2-user1');
+            const name2User1AtributteColor = document.createAttribute("class");
+    
+            name2User1AtributteColor.value = "name-color-red";
+            name2User1Value.setAttributeNode(name2User1AtributteColor);
+    
+            const name2User2Value = document.getElementById('name2-user2');
+            const name2User2AtributteColor = document.createAttribute("class");
+    
+            name2User2AtributteColor.value = "name-color-blue";
+            name2User2Value.setAttributeNode(name2User2AtributteColor);
+    
+            confirmAction();
+            
+        } else if (promptNameText === 'azul') {
+    
+            const name2User1Value = document.getElementById('name2-user1');
+            const name2User1AtributteColor = document.createAttribute("class");
+    
+            name2User2AtributteColor.value = "name-color-blue";
+            name2User1Value.setAttributeNode(name2User1AtributteColor);
+    
+            const name2User2Value = document.getElementById('name2-user2');
+            const name2User2AtributteColor = document.createAttribute("class");
+    
+            name2User2AtributteColor.value = "name-color-red";
+            name2User2Value.setAttributeNode(name2User2AtributteColor);
+    
+            confirmAction();
+    } 
+    } else {
+        setTimeout(function() {
+            alert('Los nombres no están duplicados');
+            console.log("No hubo coincidencias de nombres")
+            confirmAction();
+        }, 1000); // Ejecuta la función después de 3 segundos (3000 milisegundos)
         
-    } else if (promptNameText === 'azul') {
+    }
+            
+    }, 2000); // Ejecuta la función después de 3 segundos (3000 milisegundos)
 
-        const name2User1Value = document.getElementById('name2-user1');
-        const name2User1AtributteColor = document.createAttribute("class");
 
-        name2User2AtributteColor.value = "name-color-blue";
-        name2User1Value.setAttributeNode(name2User1AtributteColor);
-
-        const name2User2Value = document.getElementById('name2-user2');
-        const name2User2AtributteColor = document.createAttribute("class");
-
-        name2User2AtributteColor.value = "name-color-red";
-        name2User2Value.setAttributeNode(name2User2AtributteColor);
-
-        confirmAction();
-} 
-} else {
-    setTimeout(function() {
-        alert('Los nombres no están duplicados');
-        console.log("No hubo coincidencias de nombres")
-        confirmAction();
-    }, 3000); // Ejecuta la función después de 3 segundos (3000 milisegundos)
-    
-}
 
 
 function confirmAction(messageConfirmText){
