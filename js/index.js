@@ -222,8 +222,9 @@ if(name1User1 === name1User2) {
 } 
 } else {
     setTimeout(function() {
+        alert('Los nombres no están duplicados');
         confirmAction();
-    }, 6000); // Ejecuta la función después de 3 segundos (3000 milisegundos)
+    }, 3000); // Ejecuta la función después de 3 segundos (3000 milisegundos)
     
 }
 
